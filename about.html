@@ -1,0 +1,661 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #34495e;
+  color: #fff;
+}
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+}
+ 
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+ 
+@media(max-width:767px) {
+  html {
+    font-size: 14px;
+  }
+}
+ 
+ 
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+ 
+ 
+    div.container
+{
+    font-family: Raleway;
+    margin: 0 auto;
+	padding: 10em 3em;
+	text-align: center;
+}
+ 
+div.container a
+{
+    color: #FFF;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+ 
+    body {
+        background-image: url('https://cdn.discordapp.com/attachments/756440918827073546/756832232701689876/image_7.png'), linear-gradient(51deg, #e91b30 13%, #962020 66%, #700404 100%);
+        background-repeat: no-repeat, no-repeat;
+        background-position: center top;
+        background-size: cover;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        font-feature-settings: "kern" 1,"liga" 1,"frac" 1, "pnum" 1;
+        -webkit-font-smoothing: antialiased;
+        color: white;
+    }
+ 
+    body,
+    html {
+        min-height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+ 
+    #slider{
+        // display: none;
+        position: fixed;
+        right: 50px;
+        top: 50px;
+        width:300px;
+    }
+ 
+    #fps {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        background-color: #fff;
+        color: black;
+    }
+ 
+    .wrapper {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto 100px;
+    }
+ 
+ 
+    .intro {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 800px;
+        margin: -90px auto 0;
+        text-align: center;
+        animation: fadein 1s;
+    }
+ 
+    .intro__title {
+        color: white;
+        font-weight: 600;
+        font-size: 24px;
+    }
+ 
+    p {
+        opacity: 0.7;
+    }
+ 
+ 
+    .celeb {
+        position: relative;
+        z-index: 1;
+        width: 1001%;
+        margin: 350px auto 0;
+        text-align: center;
+        opacity: 0;
+        animation: fadein 1s 1s forwards;
+ 
+        p:last-child {
+            border-bottom: 1px solid rgba(white, 0.3);
+            padding-bottom: 24px;
+        }
+    }
+ 
+    .celeb__title {
+        margin-bottom: 24px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid rgba(white, 0.3);
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: -3px;
+    }
+ 
+    .celeb__sub {
+        font-size: 24px;
+    }
+ 
+    .celeb__btn {
+        display: block;
+        margin: 0 auto;
+        width: 234px;
+        height: 54px;
+        line-height: 54px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #E7413D;
+        text-decoration: none;
+        background-color: white;
+        border-radius: 3px;
+        box-shadow: 1px 4px 8px 0 rgba(0,0,0,0.07);
+        transition: width 0.2s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+ 
+        &:hover {
+            width: 264px;
+        }
+    }
+ 
+    .oh-dear {
+        display: block;
+        width: 100%;
+        max-width: 450px;
+        height: 100%;
+        max-height: 450px;
+        margin: 0 auto;
+    }
+ 
+    .oh-dear__text {
+        opacity: 0
+    }
+ 
+ 
+    .net {
+        position: relative;
+        display: block;
+        opacity: 0;
+        width: 100%;
+        max-width: 680px;
+        height: 100%;
+        max-height: 680px;
+        margin: 0 auto;
+    }
+ 
+    .net__splash-lines line {
+        visibility: hidden;
+    }
+ 
+ 
+    @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+ 
+    .gs-dev-tools {
+        z-index: 100;
+    }
+ 
+ 
+ 
+    .me {
+        position: fixed;
+        z-index: 1000;
+        top: 24px;
+        left: 24px;
+        display: flex;
+        flex-direction: column;
+    }
+ 
+    .me__link {
+        position: relative;
+        margin-bottom: 16px;
+        color: white;
+        font-family: Helvetica, sans-serif;
+        text-decoration: none;
+        font-size: 16px;
+ 
+        span {
+            display: block;
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            height: 1px;
+            width: 5%;
+            background-color: white;
+            content: "";
+            transition: width 0.3s;
+        }
+ 
+        &:hover span{
+            width: 100%;
+        }
+    }
+ 
+    .twitter {
+        position: fixed;
+        top: 16px;
+        right: 24px;
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+    div.pullUp a:before
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    background: #FFF;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+ 
+div.pullUp a:hover:before
+{
+    height: 100%;
+}
+ 
+</style>
+<div class="master-box">
+<link rel="icon" href="https://cdn.discordapp.com/attachments/756441198842871828/756445950423072780/Militia_logo_1.png">
+<ul>
+<a href="index.html"><img width="60" height="60" class="animated rotateIn" src="https://cdn.discordapp.com/attachments/738643616565821550/758278912160563230/back-1667947-2039464.png" /></a>
+</ul>
+<title>Commands! </title>
+<link rel="icon" href="https://cdn.discordapp.com/attachments/756441198842871828/756445950423072780/Militia_logo_1.png">
+<h1>commands</h1>
+<div class="accordion">
+<div class="accordion-item">
+<div class="accordion-item-header">
+m+help </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Command Help Dashboard
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-item-header">
+m+invite
+</div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Invite link to me and my server!
+</div>
+</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-item-header">
+m+contact </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Need Help? Use this command! </div>
+</div>
+</div>
+<h1> Botinfo Commands
+</h1>
+<div class="accordion-item">
+<div class="accordion-item-header">
+m+ping </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Shows API Latency [Time message took to travel] </div>
+</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-item-header">
+m+uptime </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Uptime Of Militia+ </div>
+</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-item-header">
+m+botinfo </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Information about the bot </div>
+</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-item-header">
+m+serverinfo </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Server Information On the current guild. </div>
+</div>
+</div>
+<h1>Moderation Commands</h1>
+<div class="accordion-item">
+<div class="accordion-item-header">
+m+ban </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Bans a user out of the server. </div>
+</div>
+</div> <div class="accordion-item">
+<div class="accordion-item-header">
+m+kick </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Kicks a user out of the server </div>
+</div>
+</div> <div class="accordion-item">
+<div class="accordion-item-header">
+m+purge </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Deletes amount of messages inputted. </div>
+</div>
+</div> <div class="accordion-item">
+<div class="accordion-item-header">
+m+slowmode </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Slowmode command [usage - m!slowmode [time in seconds] </div>
+</div>
+</div> <div class="accordion-item">
+<div class="accordion-item-header">
+m+warn </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Warns a member. </div>
+</div>
+</div>
+<h1> Utility Commands</h1>
+<div class="accordion-item">
+<div class="accordion-item-header">
+m+say </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Says message inputted! </div>
+</div>
+</div> <div class="accordion-item">
+<div class="accordion-item-header">
+m+poll </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Make a simple yes or no poll </div>
+</div>
+</div> <div class="accordion-item">
+<div class="accordion-item-header">
+m+id </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+ID of mentioned user </div>
+</div>
+</div> <div class="accordion-item">
+<div class="accordion-item-header">
+m+finduser </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Finds a user within the server bounds. </div>
+</div>
+</div> <div class="accordion-item">
+<div class="accordion-item-header">
+m+avatar </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Mentioned User Avatar! </div>
+</div>
+</div> <div class="accordion-item">
+<div class="accordion-item-header">
+m+userinfo </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+User Information! </div>
+</div>
+</div> <div class="accordion-item">
+<div class="accordion-item-header">
+m+weather </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Weather Command! [NEW] </div>
+</div>
+</div>
+<h1>Fun Commands</h1>
+<div class="accordion-item">
+<div class="accordion-item-header">
+m+militia </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+A feature which responds with my logo. </div>
+</div>
+</div> <div class="accordion-item">
+<div class="accordion-item-header">
+m+rip </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+A rip image attachment. </div>
+</div>
+</div> <div class="accordion-item">
+<div class="accordion-item-header">
+m+8ball </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Dumb but funny 8ball command. </div>
+</div>
+</div> <div class="accordion-item">
+<div class="accordion-item-header">
+m+rps </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Rock, Paper Or Scissors! </div>
+</div>
+</div> <div class="accordion-item">
+<div class="accordion-item-header">
+m+kill </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Kill someone (in a good way </div>
+</div>
+</div>
+<div class="accordion-item">
+<div class="accordion-item-header">
+m+shrug </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Shrug! </div>
+</div>
+</div><div class="accordion-item">
+<div class="accordion-item-header">
+m+pepe </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Gets you a random pepe! </div>
+</div>
+</div><div class="accordion-item">
+<div class="accordion-item-header">
+m+joke </div>
+ <div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Funny Jokes, lmao. </div>
+</div>
+</div><div class="accordion-item">
+<div class="accordion-item-header">
+m+mock </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+You just got mocked... </div>
+</div>
+</div><div class="accordion-item">
+<div class="accordion-item-header">
+m+cnjoke </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Chuck Norris Jokes! </div>
+</div>
+</div><div class="accordion-item">
+<div class="accordion-item-header">
+m+rate </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Rates a user from 1-10 </div>
+</div>
+</div>
+<H1>Meme/Search Commands</H1>
+<div class="accordion-item">
+<div class="accordion-item-header">
+m+urban </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Searches urban dictionary for inputted word. </div>
+</div>
+</div><div class="accordion-item">
+<div class="accordion-item-header">
+m+yomama </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Yomama meme </div>
+</div>
+</div><div class="accordion-item">
+<div class="accordion-item-header">
+m+joke </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Hilarious Jokes. </div>
+</div>
+</div><div class="accordion-item">
+<div class="accordion-item-header">
+m+gif </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Searches for giphy. </div>
+</div>
+</div><div class="accordion-item">
+<div class="accordion-item-header">
+m+meme </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Meme Command! [NEW] </div>
+</div>
+</div>
+<H1> Animal Commands</H1>
+<div class="accordion-item">
+<div class="accordion-item-header">
+m+cat </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Cute lil kitty cat. </div>
+</div>
+</div><div class="accordion-item">
+<div class="accordion-item-header">
+m+dog </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+fluffy lil dog! </div>
+</div>
+</div><div class="accordion-item">
+<div class="accordion-item-header">
+m+bird </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Chirp! Chirp! </div>
+</div>
+</div><div class="accordion-item">
+<div class="accordion-item-header">
+m+duck </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Random Pictures of ducks! </div>
+</div>
+</div><div class="accordion-item">
+<div class="accordion-item-header">
+m+fox </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Random pics of foxes. </div>
+</div>
+</div><div class="accordion-item">
+<div class="accordion-item-header">
+m+catfact </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Facts about cats </div>
+</div>
+</div><div class="accordion-item">
+<div class="accordion-item-header">
+m+dogfact </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Facts about dogs! </div>
+</div>
+</div><div class="accordion-item">
+<div class="accordion-item-header">
+m+shibe </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+A Shibe </div>
+</div>
+</div><div class="accordion-item">
+<div class="accordion-item-header">
+m+cow </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Outputs a weird cow! </div>
+</div>
+</div><div class="accordion-item">
+<div class="accordion-item-header">
+m+hamster </div>
+<div class="accordion-item-body">
+<div class="accordion-item-body-content">
+Coming soon! </div>
+</div>
+</div>
+</div>
+<script>
+const accordionItemHeaders=document.querySelectorAll(".accordion-item-header");accordionItemHeaders.forEach(accordionItemHeader=>{accordionItemHeader.addEventListener("click",event=>{accordionItemHeader.classList.toggle("active");const accordionItemBody=accordionItemHeader.nextElementSibling;if(accordionItemHeader.classList.contains("active")){accordionItemBody.style.maxHeight=accordionItemBody.scrollHeight+"px";}
+else{accordionItemBody.style.maxHeight=0;}});});
+</script>
+</div>
